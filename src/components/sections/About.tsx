@@ -32,7 +32,7 @@ const About: React.FC = () => {
             <div className="relative">
               <Card className="overflow-hidden aspect-[4/5] w-full max-w-md mx-auto" hoverEffect={false}>
                 <img 
-                  src="https://images.pexels.com/photos/7148384/pexels-photo-7148384.jpeg" 
+                  src="/src/assets/img/me.png" 
                   alt="Portrait du développeur"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -53,7 +53,7 @@ const About: React.FC = () => {
               Développeur Full Stack
             </h3>
             <p className="text-white/80 dark:text-white/80 mb-6 leading-relaxed">
-              Avec plus de 5 ans d'expérience en développement web, je me spécialise dans la création 
+              Avec plus de 2 ans d'expérience en développement web, je me spécialise dans la création 
               d'applications performantes qui résolvent des problèmes concrets.
             </p>
 
@@ -71,7 +71,7 @@ const About: React.FC = () => {
             <div className="grid grid-cols-2 gap-4">
               <div>
                 <h4 className="font-medium text-white mb-2">Localisation</h4>
-                <p className="text-white/70">Paris, France</p>
+                <p className="text-white/70">Marseille, France</p>
               </div>
               <div>
                 <h4 className="font-medium text-white mb-2">Langues</h4>
@@ -79,11 +79,11 @@ const About: React.FC = () => {
               </div>
               <div>
                 <h4 className="font-medium text-white mb-2">Formation</h4>
-                <p className="text-white/70">Master en Informatique</p>
+                <p className="text-white/70">Bachelor en Informatique</p>
               </div>
               <div>
                 <h4 className="font-medium text-white mb-2">Intérêts</h4>
-                <p className="text-white/70">UX, DevOps, IA</p>
+                <p className="text-white/70">UX, DevOps, Blockchain, IA</p>
               </div>
             </div>
           </motion.div>

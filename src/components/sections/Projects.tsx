@@ -4,6 +4,23 @@ import { projects } from '../../constants/data';
 import Card from '../ui/Card';
 import { ExternalLink, Github } from 'lucide-react';
 
+const getFilterColor = (filterId: string) => {
+  switch (filterId) {
+    case 'Next':
+      return 'from-blue-500 to-cyan-500';
+    case 'React':
+      return 'from-cyan-500 to-blue-500';
+    case 'Nest':
+      return 'from-purple-500 to-pink-500';
+    case 'Web3.js':
+      return 'from-emerald-500 to-teal-500';
+    case 'Solidity':
+      return 'from-orange-500 to-red-500';
+    default:
+      return 'from-primary-500 to-secondary-500';
+  }
+};
+
 const Projects: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState<string>('all');
   
@@ -54,17 +71,17 @@ const Projects: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="mb-12 flex flex-wrap justify-center gap-2">
+        <div className="mb-12 flex flex-wrap justify-center gap-3">
           {filters.map((filter) => (
             <motion.button
               key={filter.id}
-              whileHover={{ y: -2 }}
+              whileHover={{ y: -2, scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setActiveFilter(filter.id)}
-              className={`px-4 py-2 rounded-full text-sm transition-colors ${
+              className={`px-4 py-2 rounded-full text-lg transition-all duration-300 ${
                 activeFilter === filter.id
-                  ? 'bg-primary-500 text-white'
-                  : 'bg-dark-700/50 text-white/70 hover:bg-dark-600/50'
+                  ? `bg-gradient-to-r ${getFilterColor(filter.id)} text-white shadow-lg shadow-primary-500/20`
+                  : 'bg-dark-800/50 text-white/70 hover:bg-dark-700/50 hover:text-white/90'
               }`}
             >
               {filter.label}
@@ -124,7 +141,7 @@ const Projects: React.FC = () => {
                       </div>
                     </div>
                     {project.featured && (
-                      <div className="absolute top-2 right-2 bg-primary-500 text-xs px-2 py-1 rounded text-white">
+                      <div className="absolute top-2 right-2 bg-gradient-to-r from-primary-500 to-secondary-500 text-xs px-2 py-1 rounded text-white">
                         En Vedette
                       </div>
                     )}

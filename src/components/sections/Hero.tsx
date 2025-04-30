@@ -36,11 +36,11 @@ const Hero: React.FC = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight">
             <span className="block">Développeur Full Stack</span>
             <span className="block bg-gradient-to-r from-primary-400 to-secondary-500 bg-clip-text text-transparent">
-              Passionné & Créatif
+              Blockchain
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-white/70 dark:text-white/70 max-w-2xl mx-auto leading-relaxed">
-            Création d'expériences numériques innovantes avec les technologies modernes.
+              Pour une expérience numérique innovante et sécurisée.
           </p>
         </motion.div>
 
@@ -73,7 +73,7 @@ const Hero: React.FC = () => {
           className="flex gap-6"
         >
           <a 
-            href="#" 
+            href="https://github.com/Srblx" 
             target="_blank" 
             rel="noopener noreferrer" 
             aria-label="Profil GitHub"
@@ -82,7 +82,7 @@ const Hero: React.FC = () => {
             <Github size={24} />
           </a>
           <a 
-            href="#" 
+            href="https://www.linkedin.com/in/alexis-s-9b080a252/" 
             target="_blank" 
             rel="noopener noreferrer" 
             aria-label="Profil LinkedIn"

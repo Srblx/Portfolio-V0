@@ -14,14 +14,13 @@ export const skills: Skill[] = [
   { id: '2', name: 'TypeScript', level: 0, category: 'frontend' },
   { id: '3', name: 'React', level: 0, category: 'frontend' },
   { id: '4', name: 'Next.js', level: 0, category: 'frontend' },
-  { id: '5', name: 'Node.js', level: 0, category: 'backend' },
-  { id: '6', name: 'NestJS', level: 0, category: 'backend' },
-  { id: '7', name: 'Astro', level: 0, category: 'frontend' },
-  { id: '8', name: 'GraphQL', level: 0, category: 'backend' },
-  { id: '9', name: 'Solidity', level: 0, category: 'blockchain' },
-  { id: '10', name: 'Web3.js', level: 0, category: 'blockchain' },
-  { id: '11', name: 'Docker', level: 0, category: 'devops' },
-  { id: '12', name: 'Minio', level: 0, category: 'other' },
+  { id: '5', name: 'Astro', level: 0, category: 'frontend' },
+  { id: '6', name: 'Node.js', level: 0, category: 'backend' },
+  { id: '7', name: 'NestJS', level: 0, category: 'backend' },
+  { id: '8', name: 'Solidity', level: 0, category: 'blockchain' },
+  { id: '9', name: 'Web3.js', level: 0, category: 'blockchain' },
+  { id: '10', name: 'Docker', level: 0, category: 'devops' },
+  { id: '11', name: 'Minio', level: 0, category: 'other' },
 ];
 
 export const projects: Project[] = [
